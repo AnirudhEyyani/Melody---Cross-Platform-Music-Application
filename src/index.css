@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "Rolest";
+    src: url("./fonts/Rolest/Rolest\ FREE.ttf");
+}
+  
+.rolest-font {
+font-family: "Rolest";
+}
+
+/*Chrome*/
+/* @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .progress-bar {
+      overflow: hidden;
+      width: 100%;
+      -webkit-appearance: none;
+      background-color: #666;
+    }
+    
+    .progress-bar::-webkit-slider-runnable-track {
+      height: 7px;
+      -webkit-appearance: none;
+      color: #b3b3b3;
+      margin-top: -1px;
+    }
+
+    .progress-bar::-webkit-slider-runnable-track:hover {
+      color: #1db954;
+    }
+    
+    .progress-bar::-webkit-slider-thumb {
+        width: 300px;
+        -webkit-appearance: none;
+      height: 20px;
+      cursor: ew-resize;
+      background: #434343;
+      box-shadow: -80px 0 0 80px #b3b3b3;
+    }
+
+    .progress-bar::-webkit-slider-thumb:hover {
+      box-shadow: -80px 0 0 80px #1db954;
+    }
+
+} */
+/** FF*/
+/* input[type="range"]::-moz-range-progress {
+  background-color: #b3b3b3; 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: #9a905d;
+} */
+/* IE*/
+/* input[type="range"]::-ms-fill-lower {
+  background-color: #b3b3b3; 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: #9a905d;
+} */
