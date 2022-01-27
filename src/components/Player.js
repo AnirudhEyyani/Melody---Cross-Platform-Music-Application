@@ -114,7 +114,7 @@ function Player() {
         else {
             console.log("id is not present")
         }
-    },[songDetails])
+    },[songDetails,])
 
     useEffect(()=>{
         setAudioStateReady(true)
@@ -125,14 +125,14 @@ function Player() {
     },[audioPlayer?.current?.loadedmetadata,audioPlayer?.current?.readyState])
 
     useEffect(()=>{
-        if(currentTime == songDuration){
+        if(currentTime === songDuration){
             togglePlayPause()
             timeTravel(0)
         }
      },[currentTime])
 
     return (
-        <div className={`${audioStateReady ? 'grid' : "hidden"}  h-24 bg-gradient-to-b from-black to-gray-900 text-white grid-cols-3 text-xs md:text-base px-2 md:px-8`}>
+        <div className={`${songUrl ? 'grid' : "hidden"}  h-24 bg-gradient-to-b from-black to-gray-900 text-white grid-cols-3 text-xs md:text-base px-2 md:px-8`}>
             {/* left */}
             <div className="flex items-center space-x-4">
                 <img className="hidden md:inline h-10 w-10" src={`${playingSongDetails ? playingSongDetails.imageUrl : ''}`} alt={playingSongDetails? playingSongDetails.title :'song name'} />

@@ -36,7 +36,7 @@ exports.playSong = functions.https.onRequest(async (req,res) => {
     .getInfo(song)
     .then(info => {
       const audioFormats = ytdl.filterFormats(info.formats, 'audioonly')
-      console.log(audioFormats)
+      
       res.setHeader('Access-Control-Allow-Origin' , '*');    
       res.setHeader('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');    
       res.set('Cache-Control', 'public, max-age=20000'); //6hrs aprox
